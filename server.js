@@ -35,5 +35,10 @@ app.post('/api/generate-3d', (req, res) => {
 });
 
 // 4. Start the server
+app.get('/', (req, res) => {
+    res.send("✅ The Secure Backend is live and running!");
+});
+// -------------------------------------------------------
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Secure Server running on port ${PORT}`));
